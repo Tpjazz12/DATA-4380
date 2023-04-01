@@ -11,8 +11,11 @@ Data is collected from the NBA API using the "nba_api" Python package. Then, we 
 ### Data:
 
 Type: API Data
+
 Input: NBA team standings and player statistics
+
 Size: 30 teams with multiple player stats
+
 Instances: 82 games per team per season
 
 #### Preprocessing / Clean up:
