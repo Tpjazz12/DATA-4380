@@ -2,11 +2,13 @@
 
 ## Overview:
 
-This project aims to predict the NBA champion using the NBA API and machine learning models. In this project, player statistics and team standings data are used to train a random forest classifier model to predict the NBA champion of the current season.
+This project aims to predict the NBA champion using the NBA API and machine learning models. In this project, player statistics and team standings data are used to train random forest classifier and linear regression models to predict the NBA champion of the current season.
 
 ## Summary of Workdone:
 
-Data is collected from the NBA API using the "nba_api" Python package. Then, we merged the team standings and player statistics data into a single dataset. We performed feature engineering and selection, followed by data imputation using the mean value. Then, we split the dataset into training and testing sets. We trained a random forest classifier model on the training set, and evaluated its accuracy using the testing set. Finally, we predicted the champion for the current season using the trained model.
+Data is collected from the NBA API using the "nba_api" Python package. Then, we merged the team standings and player statistics data into a single dataset. We performed feature engineering and selection, followed by data imputation using the mean value. Then, we split the dataset into training and testing sets.
+We trained a random forest classifier model on the training set, and evaluated its accuracy using the testing set. Finally, we predicted the champion for the current season using the trained model.
+                  
 
 ### Data:
 
