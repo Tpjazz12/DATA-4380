@@ -55,9 +55,10 @@ nba_champion_prediction.ipynb: main code for data collection, cleaning, and mach
 
 README.md: contains information about the project, data, and instructions for reproducing results.
 
-requirements.txt: list of required packages.
+Linear-Regression-Application.ipynb: Train the dataset by Linear Regression model.
 
-LICENSE: MIT license information.
+
+
 
 ### Software Setup:
 
