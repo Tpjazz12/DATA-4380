@@ -55,9 +55,15 @@ nba_champion_prediction.ipynb: main code for data collection, cleaning, and mach
 
 README.md: contains information about the project, data, and instructions for reproducing results.
 
-Linear-Regression-Application.ipynb: Train the dataset by Linear Regression model.
+Linear-Regression-Application.ipynb: Train the dataset with Linear Regression model.
 
+Training-by-feature-weight.ipynb:
 
+NBA-Scrape.ipynb: Scraping NBA dataset and graphing the standing teams.
+
+NBA-individual-games-prediction-using-XGB-model.ipynb: Using XGBoost Model to train and test on dataset for individual game prediction.
+
+Random-Forest-Classifier.ipynb: Train the dataset with Random Forest Classifier model.
 
 
 ### Software Setup:
