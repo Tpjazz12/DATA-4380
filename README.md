@@ -57,7 +57,7 @@ README.md: contains information about the project, data, and instructions for re
 
 Linear-Regression-Application.ipynb: Train the dataset with Linear Regression model.
 
-Training-by-feature-weight.ipynb:
+Feature-weight-Calculation.ipynb: Manually calculate the features wnd compared the result to the dataset and predict the winner.
 
 NBA-Scrape.ipynb: Scraping NBA dataset and graphing the standing teams.
 
