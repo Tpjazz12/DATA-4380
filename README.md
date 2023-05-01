@@ -1,12 +1,14 @@
 # NBA Champion Predictor
 
+This project aims to predict the NBA champion using the NBA API and machine learning models. 
+
 ## Overview:
 
-This project aims to predict the NBA champion using the NBA API and machine learning models. In this project, player statistics and team standings data are used to train linear regression and random forest classifier models to predict the NBA champion of the current season.
+In this project, player statistics and team standings data are used to train linear regression and random forest classifier models to predict the NBA champion of the current season.
 
 ## Summary of Workdone:
 
-Data is collected from the NBA API using the "nba_api" Python package. Then, we merged the team standings and player statistics data into a single dataset. We performed feature engineering and selection, followed by data imputation using the mean value. Then, we split the dataset into training and testing sets for model evaluation.
+ Data is collected from the NBA API using the "nba_api" Python package. Then, we merged the team standings and player statistics data into a single dataset. We performed feature engineering and selection, followed by data imputation using the mean value. Then, we split the dataset into training and testing sets for model evaluation.
 Two machine learning models, a Linear Regression model and a Random Forest Classifier model, were trained on the training dataset.
                   
 ### Data:
@@ -53,9 +55,16 @@ nba_champion_prediction.ipynb: main code for data collection, cleaning, and mach
 
 README.md: contains information about the project, data, and instructions for reproducing results.
 
-requirements.txt: list of required packages.
+Linear-Regression-Application.ipynb: Train the dataset with Linear Regression model.
 
-LICENSE: MIT license information.
+Training-by-feature-weight.ipynb:
+
+NBA-Scrape.ipynb: Scraping NBA dataset and graphing the standing teams.
+
+NBA-individual-games-prediction-using-XGB-model.ipynb: Using XGBoost Model to train and test on dataset for individual game prediction.
+
+Random-Forest-Classifier.ipynb: Train the dataset with Random Forest Classifier model.
+
 
 ### Software Setup:
 
