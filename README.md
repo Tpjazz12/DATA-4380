@@ -25,6 +25,8 @@ Instances: 82 games per team per season
 
 We merged the team standings and player statistics data into a single dataset and performed feature engineering by creating new features based on existing ones. Then we used data imputation using the mean value for missing values.
 
+![](Screen Shot 2023-05-06 at 5.35.04 PM.png)
+
 ### Problem Formulation:
 
 We formulated the problem using two approaches: a regression task and a classification task. For the regression task, the input features were the team and player statistics, and the output was the winning percentage of the team. We used a linear regression model to predict the winning percentage. For the classification task, the input features were the team and player statistics, and the output was the playoff rank of the team. We used a random forest classifier model to predict the playoff rank.
