@@ -25,8 +25,11 @@ Instances: 82 games per team per season
 
 We merged the team standings and player statistics data into a single dataset and performed feature engineering by creating new features based on existing ones. Then we used data imputation using the mean value for missing values.
 
-![](https://raw.githubusercontent.com/Tpjazz12/DATA-4380-NBA-predictions/154c8b4b858a148718b2ba82eaa5e012760ed744/Screen%20Shot%202023-05-06%20at%205.35.04%20PM.png![image](https://user-images.githubusercontent.com/111667888/236649331-eba7676e-16f5-4669-a23e-b70ba77dfba2.png)
-)
+![image](https://user-images.githubusercontent.com/111667888/236649517-9e62ad1a-349b-4f13-aa49-dd2697a14924.png)
+
+
+
+
 
 ### Problem Formulation:
 
