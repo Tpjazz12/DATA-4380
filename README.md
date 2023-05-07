@@ -4,13 +4,13 @@ This project aims to predict the NBA champion using the NBA API and machine lear
 
 ## Overview:
 
-In this project, player statistics and team standings data are used to train linear regression and random forest classifier models to predict the NBA champion of the current season.
+In this project, player statistics and team standings data are used to train Linear Regression, Random Forest Classifier and Random Forest Regressor models to predict the NBA champion of the current season.
 
 ## Summary of Workdone:
 
- Data is collected from the NBA API using the "nba_api" Python package. Then, we merged the team standings and player statistics data into a single dataset. We performed feature engineering and selection, followed by data imputation using the mean value. Then, we split the dataset into training and testing sets for model evaluation.
-Two machine learning models, a Linear Regression model and a Random Forest Classifier model, were trained on the training dataset.
-                  
+ Data is collected from the NBA API using the "nba_api" Python package. Then, we merged the team standings and player statistics data into a single dataset. We performed feature engineering and selection, followed by data imputation using the mean value. Then, we split the dataset into training and testing sets for model evaluation. Three machine learning models, a Linear Regression model, a Random Forest Classifier model, and a Random Forest Regressor model, were trained on the training dataset.
+
+
 ### Data:
 
 Type: API Data
@@ -40,29 +40,33 @@ We merged the team standings and player statistics data into a single dataset an
 
 ### Training:
 
-We trained the linear regression model and the random forest classifier model using the training dataset. The random forest classifier model was trained with 100 estimators and a max depth of 10. We used the R2 score for evaluating the linear regression model and the accuracy score for evaluating the random forest classifier model.
+We trained the linear regression model, the random forest classifier model, and the random forest regressor model using the training dataset. The random forest classifier and regressor models were trained with 100 estimators and a max depth of 10. We used the R2 score for evaluating the linear regression model and the random forest regressor model, while the accuracy score was used for evaluating the random forest classifier model.
 ![image](https://user-images.githubusercontent.com/111667888/236650052-c527c1d3-2f20-4b79-8274-57626d16dcd9.png)
 ![image](https://user-images.githubusercontent.com/111667888/236650551-4dc8254c-0a96-49e1-af6e-a56c0879ada8.png)
 
 
 ### Performance Comparison:
-
-The linear regression model achieved an R2 score of 0.5188 on the testing dataset, while the random forest classifier model achieved an accuracy score of 0.23 on the testing dataset. We predicted the champion for the current season using both trained models.
+The linear regression model achieved an R2 score of 0.5188 on the testing dataset, while the random forest classifier model achieved an accuracy score of 0.23 on the testing dataset. The random forest regressor model outperformed both, with an R2 score of 0.8177, a mean squared error of 0.0044, and a mean absolute error of 0.0413 on the testing dataset. We predicted the champion for the current season using all three trained models.
 
 * Linear Regression score:
 ![image](https://user-images.githubusercontent.com/111667888/236649990-c933324d-2f2f-4e54-a23c-c72589b20abc.png)
+* Random Forest Regressor score:
+![image](https://user-images.githubusercontent.com/111667888/236651652-72f9bd69-2a65-44b3-a675-b8053cc39b1a.png)
 * Random Forest Classifier score:
 ![image](https://user-images.githubusercontent.com/111667888/236650237-0ce8fd75-68cf-4efc-a0a8-d84c3338b5d5.png)
 
 
 ### Conclusions:
 
-Both models were able to predict the champion for the current season with reasonable accuracy scores
+Both models were able to predict the champion for the current season with reasonable accuracy scores. However, the random forest regressor model demonstrated a stronger performance:
+
 * The linear regression model achieved an R2 score of 0.5188, indicating that it explains approximately 51.88% of the variance in the target variable.
 * The random forest classifier model demonstrated an accuracy of 23.70%.
-Despite the differing performance metrics between the two models, it is important to note that both models arrived at the same prediction: the Milwaukee Bucks will emerge as the champions for this year's season. While neither model achieved particularly high scores in their respective metrics, the consensus between the two offers some confidence in their prediction
-![image](https://user-images.githubusercontent.com/111667888/236650473-3a35739a-4a1e-42d6-b76d-3d54e81e7805.png)
+* The random forest regressor model achieved an R2 score of 0.8177, a mean squared error of 0.0044, and a mean absolute error of 0.0413, outperforming the other two models.
 
+Despite the differing performance metrics between the models, it is important to note that the linear regression and random forest regressor models arrived at the same prediction: the Milwaukee Bucks will emerge as the champions for this year's season. The random forest classifier model predicted the Brooklyn Nets as the champions. While neither the linear regression nor the random forest classifier model achieved particularly high scores in their respective metrics, the consensus between the linear regression and random forest regressor models offers some confidence in their prediction.
+
+![image](https://user-images.githubusercontent.com/111667888/236650473-3a35739a-4a1e-42d6-b76d-3d54e81e7805.png)
 
 ### Future Work:
 
@@ -87,6 +91,8 @@ NBA-Scrape.ipynb: Scraping NBA dataset and graphing the standing teams.
 NBA-individual-games-prediction-using-XGB-model.ipynb: Using XGBoost Model to train and test on dataset for individual game prediction.
 
 Random-Forest-Classifier.ipynb: Train the dataset with Random Forest Classifier model.
+
+Random-Forest-Regressor.ipynb: Train the dataset with Random Forest Regressor model.
 
 
 ### Software Setup:
